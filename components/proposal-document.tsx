@@ -37,7 +37,7 @@ export default function ProposalDocument() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="space-y-2">
               <Badge className="bg-blue-500/20 text-white hover:bg-blue-500/30 mb-2">提案書</Badge>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
                 人材育成強化のための
                 <br />
                 「Schoo for Business」導入提案書
