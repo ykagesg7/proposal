@@ -159,6 +159,113 @@ export default function ProposalDocument() {
             <h2 className="text-2xl md:text-3xl font-bold text-blue-800">背景・現状認識</h2>
           </div>
 
+          <div className="space-y-6 print:space-y-8">
+            <div className="bg-white rounded-lg border shadow-sm overflow-hidden">
+              <div className="p-6 border-b">
+                <h3 className="text-xl font-semibold text-blue-700">航空自衛隊を取り巻く環境と任務の変化</h3>
+              </div>
+              <div className="p-6">
+                <p className="mb-4">
+                  我が国を取り巻く安全保障環境は一層厳しさと不確実性を増しており、宇宙・サイバー・電磁波といった新領域における優勢の確保、グレーゾーン事態へのシームレスな対応など、航空自衛隊に求められる役割はますます拡大かつ複雑化しています。
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">高度な情報分析能力</h4>
+                    <p className="text-sm text-slate-600">複雑化する情報環境下での迅速かつ正確な分析力</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">迅速な意思決定能力</h4>
+                    <p className="text-sm text-slate-600">変化に即応する判断力と決断力の向上</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">デジタルリテラシー</h4>
+                    <p className="text-sm text-slate-600">複雑化・ネットワーク化する装備システムの効果的運用</p>
+                  </div>
+                </div>
+
+                <p>
+                  <strong>組織全体としてのDX（デジタルトランスフォーメーション）</strong>推進も喫緊の課題です。
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg border shadow-sm overflow-hidden">
+              <div className="p-6 border-b">
+                <h3 className="text-xl font-semibold text-blue-700">人材育成における構造的課題</h3>
+              </div>
+              <div className="p-6">
+                <p className="mb-4">
+                  少子化の進行や民間企業との人材獲得競争の激化により、優秀な人材の確保は依然として厳しい状況が続いています。令和6年版防衛白書によれば、自衛官の充足率は長年にわたり
+                  <strong>定員を約1割（2万人強）下回る状況</strong>
+                  が続いており、この恒常的な人員不足は、部隊の練度維持や任務遂行能力に深刻な影響を及ぼしかねない喫緊の課題です。
+                </p>
+
+                <div className="my-6 bg-white rounded-lg border shadow-sm p-4">
+                  <PersonnelChart />
+                  <p className="text-center text-sm text-slate-500 mt-2">
+                    図1：自衛官 定員と現員の推移及び充足率（出典：令和6年版 防衛白書 資料67）
+                  </p>
+                </div>
+
+                <p className="mb-4">
+                  具体的には、充足率が約90%であるということは、例えば30名定員の編単隊規模であれば
+                  <strong>常に3名程度の人員が不足</strong>
+                  している計算となり、その負担は無視できない規模となっています。
+                </p>
+
+                <div className="bg-red-50 border-l-4 border-red-300 p-4 my-4">
+                  <p className="text-red-800">
+                    特に、<strong>高度な専門知識を要する分野</strong>
+                    （例：サイバー、宇宙、電磁波など）や、新たな任務領域を担う人材の育成は急務であり、これらの分野における
+                    <strong>質・量双方の確保</strong>は、将来の航空自衛隊の能力を左右する重要な要素です。
+                  </p>
+                </div>
+
+                <p>
+                  このような状況下、限られた人的リソースで増大する任務に対応するため、隊員、特に部隊の中核を担う中堅以上の人材は、本来注力すべき高度な専門業務や部隊指揮、後進の育成指導に
+                  <strong>十分な時間を割くことが困難</strong>
+                  な状況も見受けられます。日常業務に追われ、体系的な教育活動に十分な時間とエネルギーを割けないという声も聞かれ、結果として
+                  <strong>教育の質の低下や、中堅幹部の疲弊を招くリスク</strong>も懸念されます。
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg border shadow-sm overflow-hidden">
+              <div className="p-6 border-b">
+                <h3 className="text-xl font-semibold text-blue-700">既存教育の限界</h3>
+              </div>
+              <div className="p-6">
+                <p className="mb-4">
+                  従来の教育システムは、集合教育を中心とした形式が主流であり、以下のような課題が指摘されています：
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">時間的制約</h4>
+                    <p className="text-sm text-slate-600">集合教育の実施には、参加者のスケジュール調整や会場確保など、多大な準備時間が必要</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">場所の制約</h4>
+                    <p className="text-sm text-slate-600">遠隔地の隊員や、勤務時間外の学習機会の確保が困難</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">教育リソースの分散</h4>
+                    <p className="text-sm text-slate-600">限られた教育担当者の負担が大きく、質の高い教育の提供が困難</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 className="font-medium text-slate-800 mb-2">学習進度の個人差</h4>
+                    <p className="text-sm text-slate-600">集合教育では、個人の理解度や学習速度に合わせた教育が困難</p>
+                  </div>
+                </div>
+
+                <p>
+                  これらの課題に対応するため、<strong>時間や場所に縛られない柔軟な学習環境</strong>の整備が求められています。
+                </p>
+              </div>
+            </div>
+          </div>
+
           <Tabs defaultValue="environment" className="mb-8">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3">
               <TabsTrigger value="environment">環境と任務の変化</TabsTrigger>
